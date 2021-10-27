@@ -13,6 +13,7 @@
 		361CD43A2728FCA4005DD3CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 361CD4382728FCA4005DD3CB /* Main.storyboard */; };
 		361CD43C2728FCA5005DD3CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 361CD43B2728FCA5005DD3CB /* Assets.xcassets */; };
 		361CD43F2728FCA5005DD3CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 361CD43D2728FCA5005DD3CB /* LaunchScreen.storyboard */; };
+		E02C4E17A5AD81AD83E5A3D7 /* Pods_KakaopayClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F343D4E71E63E180D017F43 /* Pods_KakaopayClone.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,9 @@
 		361CD43B2728FCA5005DD3CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		361CD43E2728FCA5005DD3CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		361CD4402728FCA5005DD3CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E6D317C9930C5F7ECF292E1 /* Pods-KakaopayClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaopayClone.release.xcconfig"; path = "Target Support Files/Pods-KakaopayClone/Pods-KakaopayClone.release.xcconfig"; sourceTree = "<group>"; };
+		3F343D4E71E63E180D017F43 /* Pods_KakaopayClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KakaopayClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD6BFDD104B315A0C8519956 /* Pods-KakaopayClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaopayClone.debug.xcconfig"; path = "Target Support Files/Pods-KakaopayClone/Pods-KakaopayClone.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E02C4E17A5AD81AD83E5A3D7 /* Pods_KakaopayClone.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				361CD4312728FCA4005DD3CB /* KakaopayClone */,
 				361CD4302728FCA4005DD3CB /* Products */,
+				9BF2EA13633FA35C2509ACDD /* Pods */,
+				6BC6E10A6832F6649F244B60 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = KakaopayClone;
 			sourceTree = "<group>";
 		};
+		6BC6E10A6832F6649F244B60 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F343D4E71E63E180D017F43 /* Pods_KakaopayClone.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9BF2EA13633FA35C2509ACDD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CD6BFDD104B315A0C8519956 /* Pods-KakaopayClone.debug.xcconfig */,
+				3E6D317C9930C5F7ECF292E1 /* Pods-KakaopayClone.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 361CD4432728FCA5005DD3CB /* Build configuration list for PBXNativeTarget "KakaopayClone" */;
 			buildPhases = (
+				A93221577F743473C31FB57D /* [CP] Check Pods Manifest.lock */,
 				361CD42B2728FCA4005DD3CB /* Sources */,
 				361CD42C2728FCA4005DD3CB /* Frameworks */,
 				361CD42D2728FCA4005DD3CB /* Resources */,
@@ -132,6 +158,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A93221577F743473C31FB57D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KakaopayClone-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		361CD42B2728FCA4005DD3CB /* Sources */ = {
@@ -284,6 +335,7 @@
 		};
 		361CD4442728FCA5005DD3CB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD6BFDD104B315A0C8519956 /* Pods-KakaopayClone.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +364,7 @@
 		};
 		361CD4452728FCA5005DD3CB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E6D317C9930C5F7ECF292E1 /* Pods-KakaopayClone.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
