@@ -121,6 +121,7 @@
 				361CD42B2728FCA4005DD3CB /* Sources */,
 				361CD42C2728FCA4005DD3CB /* Frameworks */,
 				361CD42D2728FCA4005DD3CB /* Resources */,
+				98A79BD16016AC505955AB39 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -177,6 +178,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		98A79BD16016AC505955AB39 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KakaopayClone/Pods-KakaopayClone-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KakaopayClone/Pods-KakaopayClone-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KakaopayClone/Pods-KakaopayClone-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		A93221577F743473C31FB57D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
