@@ -10,9 +10,10 @@
 		361CD4332728FCA4005DD3CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361CD4322728FCA4005DD3CB /* AppDelegate.swift */; };
 		361CD4352728FCA4005DD3CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361CD4342728FCA4005DD3CB /* SceneDelegate.swift */; };
 		361CD4372728FCA4005DD3CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361CD4362728FCA4005DD3CB /* ViewController.swift */; };
-		361CD43A2728FCA4005DD3CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 361CD4382728FCA4005DD3CB /* Main.storyboard */; };
 		361CD43C2728FCA5005DD3CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 361CD43B2728FCA5005DD3CB /* Assets.xcassets */; };
 		361CD43F2728FCA5005DD3CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 361CD43D2728FCA5005DD3CB /* LaunchScreen.storyboard */; };
+		361CD44827290B9C005DD3CB /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361CD44727290B9C005DD3CB /* MainTabController.swift */; };
+		361CD44B272A2C60005DD3CB /* CustomTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361CD44A272A2C60005DD3CB /* CustomTabbar.swift */; };
 		E02C4E17A5AD81AD83E5A3D7 /* Pods_KakaopayClone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F343D4E71E63E180D017F43 /* Pods_KakaopayClone.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,10 +22,11 @@
 		361CD4322728FCA4005DD3CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		361CD4342728FCA4005DD3CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		361CD4362728FCA4005DD3CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		361CD4392728FCA4005DD3CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		361CD43B2728FCA5005DD3CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		361CD43E2728FCA5005DD3CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		361CD4402728FCA5005DD3CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		361CD44727290B9C005DD3CB /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
+		361CD44A272A2C60005DD3CB /* CustomTabbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabbar.swift; sourceTree = "<group>"; };
 		3E6D317C9930C5F7ECF292E1 /* Pods-KakaopayClone.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaopayClone.release.xcconfig"; path = "Target Support Files/Pods-KakaopayClone/Pods-KakaopayClone.release.xcconfig"; sourceTree = "<group>"; };
 		3F343D4E71E63E180D017F43 /* Pods_KakaopayClone.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KakaopayClone.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD6BFDD104B315A0C8519956 /* Pods-KakaopayClone.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KakaopayClone.debug.xcconfig"; path = "Target Support Files/Pods-KakaopayClone/Pods-KakaopayClone.debug.xcconfig"; sourceTree = "<group>"; };
@@ -65,13 +67,30 @@
 			children = (
 				361CD4322728FCA4005DD3CB /* AppDelegate.swift */,
 				361CD4342728FCA4005DD3CB /* SceneDelegate.swift */,
+				361CD449272A2C40005DD3CB /* Views */,
+				361CD44627290B8F005DD3CB /* Controllers */,
 				361CD4362728FCA4005DD3CB /* ViewController.swift */,
-				361CD4382728FCA4005DD3CB /* Main.storyboard */,
 				361CD43B2728FCA5005DD3CB /* Assets.xcassets */,
 				361CD43D2728FCA5005DD3CB /* LaunchScreen.storyboard */,
 				361CD4402728FCA5005DD3CB /* Info.plist */,
 			);
 			path = KakaopayClone;
+			sourceTree = "<group>";
+		};
+		361CD44627290B8F005DD3CB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				361CD44727290B9C005DD3CB /* MainTabController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		361CD449272A2C40005DD3CB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				361CD44A272A2C60005DD3CB /* CustomTabbar.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		6BC6E10A6832F6649F244B60 /* Frameworks */ = {
@@ -88,7 +107,6 @@
 				CD6BFDD104B315A0C8519956 /* Pods-KakaopayClone.debug.xcconfig */,
 				3E6D317C9930C5F7ECF292E1 /* Pods-KakaopayClone.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -153,7 +171,6 @@
 			files = (
 				361CD43F2728FCA5005DD3CB /* LaunchScreen.storyboard in Resources */,
 				361CD43C2728FCA5005DD3CB /* Assets.xcassets in Resources */,
-				361CD43A2728FCA4005DD3CB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -190,7 +207,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				361CD4372728FCA4005DD3CB /* ViewController.swift in Sources */,
+				361CD44B272A2C60005DD3CB /* CustomTabbar.swift in Sources */,
 				361CD4332728FCA4005DD3CB /* AppDelegate.swift in Sources */,
+				361CD44827290B9C005DD3CB /* MainTabController.swift in Sources */,
 				361CD4352728FCA4005DD3CB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -198,14 +217,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		361CD4382728FCA4005DD3CB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				361CD4392728FCA4005DD3CB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		361CD43D2728FCA5005DD3CB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -346,7 +357,6 @@
 				INFOPLIST_FILE = KakaopayClone/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -375,7 +385,6 @@
 				INFOPLIST_FILE = KakaopayClone/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

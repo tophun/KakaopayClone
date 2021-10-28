@@ -6,5 +6,6 @@ target 'KakaopayClone' do
   use_frameworks!
 
   # Pods for KakaopayClone
-
+  pod 'SnapKit', '~> 5.0.0'
+  
 end
