@@ -7,5 +7,6 @@ target 'KakaopayClone' do
 
   # Pods for KakaopayClone
   pod 'SnapKit', '~> 5.0.0'
+  pod 'Then'
   
 end
